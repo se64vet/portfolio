@@ -1,0 +1,38 @@
+.flex {
+    display: flex;
+  }
+   
+  .title_effect {
+    color: var(--main_color);
+  }
+  .title_effect::before, .title_effect::after {
+    content: attr(title);
+    display: block;
+    color: transparent;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: var(--main_color);
+    text-shadow: none;
+  }
+ 
+  .opacity0 {
+    opacity: 0;
+  }
+  
+  .opacity1 {
+    opacity: 1;
+  }
+  
+  .scale0 {
+    transform: scale(0);
+  }
+  
+  .hamburger-animation {
+    transform: rotate(90deg);
+    color: var(--sub_color);
+    transition: 1s ease;
+  }
+  
+  .hamburger-animation-counter {
+    transform: rotate(-180deg);
+    transition: 1s ease;
+  }

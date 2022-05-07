@@ -1,0 +1,36 @@
+doctype html
+html(lang="en")
+    head
+        meta(charset="UTF-8")
+        meta(http-equiv="X-UA-Compatible", content="IE=edge")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        title=title 
+
+        link(rel="stylesheet", href="./styles/mainstyle.css")
+    body 
+        .work_wrapper
+            .work_intro 
+                a(href="/#/works") &#8592; Back to /Works 
+                img(src=`../assets/${front_img}`, alt="Img Src: Internet")
+                h1(title=name  class="title_effect")=name
+
+                p!=desc 
+            .work_details 
+                .img_grid
+                    - var n = 1
+                    while n<8
+                        img(src=`../assets/${img_folder}/${n}${img_extend}` onclick="onClick(this)") 
+                        - n++
+                .src_btns 
+                    a(href=code) View Code 
+                    a(href=demo) View Demo  
+
+        div#modal(style="display: none" onclick="this.style.display='none'")
+            .animate_zoom 
+                img#modal_img
+
+        script. 
+            function onClick(element) {
+                document.getElementById("modal_img").src = element.src;
+                document.getElementById("modal").style.display = "flex";
+            }

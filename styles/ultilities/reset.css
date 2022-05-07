@@ -1,0 +1,23 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: var(--mainfont);
+    color: var(--main_color);
+}
+img {
+    max-width: 100%;
+}
+a{
+    text-decoration: none;
+}
+
+.section {
+    width: 100vw;
+    height: 100vh;
+    padding-top: 8%;
+    font-family: britannic;
+    overflow: hidden;
+  }

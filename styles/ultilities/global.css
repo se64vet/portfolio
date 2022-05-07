@@ -1,0 +1,17 @@
+@font-face {
+    font-family: britannic;
+    src: url('../../fonts/britannic-bold.ttf');
+
+    font-family: book antiqua;
+    src: url('../../fonts/book-antiqua.ttf');
+}
+:root{
+    --main_color: #686868;
+    --sub_color: #fd702f;
+    --mainfont: britannic;
+    --subfont: book antiqua;
+}
+body{
+    font-size: calc(1rem + 1vw);
+    position: relative;
+}
